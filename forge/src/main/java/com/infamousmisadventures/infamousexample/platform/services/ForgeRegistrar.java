@@ -1,7 +1,10 @@
 package com.infamousmisadventures.infamousexample.platform.services;
 
 import com.google.common.collect.ImmutableMap;
-import com.infamousmisadventures.infamousexample.registry.*;
+import com.infamousmisadventures.infamousexample.registry.ExampleAttributes;
+import com.infamousmisadventures.infamousexample.registry.ExampleBlocks;
+import com.infamousmisadventures.infamousexample.registry.ExampleCreativeTabs;
+import com.infamousmisadventures.infamousexample.registry.ExampleItems;
 import it.unimi.dsi.fastutil.objects.Object2ObjectLinkedOpenHashMap;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
@@ -23,10 +26,7 @@ public class ForgeRegistrar implements IRegistrar {
         ExampleAttributes.register(); //TODO Find a way to automate this goofy ahh classloading
         ExampleItems.register();
         ExampleBlocks.register();
-        IAMenuTypes.register();
         ExampleCreativeTabs.register();
-        IATargettingComponentTypes.register();
-        IATargettedComponentTypes.register();
     }
 
     @Override

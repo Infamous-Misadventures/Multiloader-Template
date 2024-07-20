@@ -13,10 +13,7 @@ public class FabricRegistrar implements IRegistrar {
         ExampleAttributes.register();
         ExampleItems.register();
         ExampleBlocks.register();
-        IAMenuTypes.register();
         ExampleCreativeTabs.register();
-        IATargettingComponentTypes.register();
-        IATargettedComponentTypes.register();
     }
 
     @Override
